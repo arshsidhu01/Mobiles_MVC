@@ -1,0 +1,165 @@
+﻿@model IEnumerable<Mobiles_MVC.Models.Products>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Services -->
+<div id="services" class="cards-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">PRODUCTS</div>
+                <h2>Choose The Model<br> That Suits Your Needs</h2>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-fluid" src="images/iphonered.png" alt="alternative">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">iphone 11 </h3>
+                        <p>
+                            The iPhone 11 is a smartphone designed, developed, and marketed by Apple Inc. It is the thirteenth generation lower-priced iPhone
+                        </p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                
+                        </ul>
+                        <p class="price">Starting at <span>$1150</span></p>
+                    </div>
+                   
+                    </div> <!-- end of button-container -->
+                </div>
+                <!-- end of card -->
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-fluid" src="images/iphone12.png" alt="alternative">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">iphone 12 mini</h3>
+                        <p>iPhone 12 mini is the world’s smallest, thinnest, and lightest 5G phone.¹ Complete with A14 Bionic, the fastest chip in a smartphone. A new dual-camera system. And a beautiful Super Retina XDR display.</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                
+                            </li>
+                        </ul>
+                        <p class="price">Starting at <span>$1499</span></p>
+                    </div>
+                    
+                    </div> <!-- end of button-container -->
+                </div>
+                <!-- end of card -->
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-fluid" src="images/iphone11.jpg" alt="alternative">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">iphone 12 pro</h3>
+                        <p>iPhone 12 Pro jumps from 8- to 10‑bit HDR recording, capturing 700 million colors for much more lifelike video. Then it goes one better, recording in Dolby Vision — the format used by film studios. You can even edit Dolby Vision video and use AirPlay to see every last bit of the difference on the big screen.</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                               
+                            </li>
+                        </ul>
+                        <p class="price">Starting at <span>$2299</span></p>
+                    </div>
+                   
+                    </div> <!-- end of button-container -->
+                </div>
+                <!-- end of card -->
+
+            </div> <!-- end of col -->
+       > <!-- end of row -->
+   <!-- end of container -->
+ <!-- end of cards-2 -->
+<!-- end of services -->
+
+
+<!-- Projects -->
+<div id="projects" class="filter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">PROJECTS</div>
+                <h2>Projects That We're Proud Of</h2>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Filter -->
+               
+                <div class="grid">
+                    
+                          </div><img src="images/iphonese.jpg" alt="alternative">
+                    </div>
+                   
+                   </div><img src="images/iphone8.jpg" alt="alternative">
+                    </div>
+                    
+                       </div><img src="images/iPhone7.png" alt="alternative"><
+                   
+                    
+                    <<img src="images/iphone6.jpg" alt="alternative"></
+                   
+                   
+                 <!-- end of grid -->
+                <!-- end of filter -->
+
+            > <!-- end of col -->
+        > <!-- end of row -->
+    </ <!-- end of container -->
+<> <!-- end of filter -->
+<!-- end of projects -->

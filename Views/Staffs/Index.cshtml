@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Mobiles_MVC.Models.Staffs>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Staff_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Staff_Position)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Staff_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Staff_Position)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Details 1 -->
+<div id="details" class="accordion">
+    <div class="area-1">
+    </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+
+        <!-- Accordion -->
+        <div class="accordion-container" id="accordionOne">
+            <h2>Arshdeep singh</h2>
+            <p>Manager</p>
+            <div class="item">
+               
+            </div> <!-- end of item -->
+
+           
+                </div>
+            </div> <!-- end of item -->
+        </div> <!-- end of accordion-container -->
+        <!-- end of accordion -->
+
+     <!-- end of area-2 -->
+< <!-- end of accordion -->
+<!-- end of details 1 -->
+<!-- Details 2 -->
+    <div class="area-1">
+        <div class="tabs-container">
+
+           
+    </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
+</div> <!-- end of tabs -->
+<!-- end of details 2 -->
